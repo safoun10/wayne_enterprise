@@ -39,6 +39,11 @@ hr {
 	padding: 1rem 2rem;
 	border-radius: 30px;
 	font-weight: 600;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	color: #242424;
 }
 
 nav {
@@ -371,4 +376,52 @@ nav {
 .each {
 	border-top: 1px solid rgb(224, 224, 224);
 	border-radius: 25px;
+}
+
+.parallax-section-green {
+	height: 80vh;
+	width: 100%;
+	border-radius: 25px;
+	background-image: url("resources/green_mountains.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+
+.connect {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 100px 0;
+	border-top: 1px solid rgb(213, 213, 213);
+	border-bottom: 1px solid rgb(213, 213, 213);
+}
+
+.connect_main {
+	font-size: 4rem;
+}
+
+.connect_sub {
+	color: darkgray;
+	margin: 34px 0;
+	width: 50%;
+	text-align: center;
+}
+
+.learn {
+	width: 50%;
+	text-align: center;
+}
+
+.learn:hover {
+	color: white;
+}
+
+.footer_text {
+	margin: 50px 0;
+	text-align: center;
+	font-weight: 200 !important;
 }
