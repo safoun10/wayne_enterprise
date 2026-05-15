@@ -1,9 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "DM Sans", sans-serif;
 }
 
-.text {
-	font-size: 50px;
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+a {
+	all: unset;
+	cursor: pointer;
+}
+
+hr {
+	height: 1px;
+	border: none;
+	background-color: darkgray;
+}
+
+.cr_text {
+	font-family: "Crimson Text", serif;
+}
+
+.btn {
+	background-color: #485c11;
+	color: white;
+	border: none;
+	padding: 1rem 2rem;
+	border-radius: 30px;
+	font-weight: 600;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+	font-weight: 600;
+
+	position: sticky;
+	top: 0;
+	background-color: white;
+	z-index: 100;
+}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.hero_photo {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.hero_text {
+	font-size: 7rem;
+	line-height: 7rem;
+	text-align: center;
+	padding: 4rem 0;
+}
+
+.hero_img {
+	position: relative;
+	z-index: 2;
+	bottom: 0;
+	max-width: 95%;
+	display: block;
+	height: auto;
+	transform: translateY(50px);
+	border: 1rem solid black;
+	border-radius: 30px;
+}
+
+.bg {
+	background-color: #8a9b6f;
+	min-width: 98%;
+	min-height: 50vh;
+	border-radius: 5vh;
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+}
+
+.trusted_logos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+	margin: 150px 0;
+}
+
+.logo_trust {
+	max-width: 10vw;
+	padding: 0 15px;
+	object-fit: contain;
+	filter: grayscale(100%);
+	transition: filter 0.3s;
+}
+
+.logo_trust:hover {
+	filter: grayscale(0%);
+}
+
+.code {
+	margin: 100px 0;
+}
+
+.semi_top {
+	margin-top: 100px;
+	color: darkgray;
+}
+
+.semi_bottom {
+	margin-bottom: 100px;
+	color: darkgray;
+}
+
+.main_code {
+	margin: 50px 0;
+	font-size: 3rem;
+}
+
+.boxes {
+	display: flex;
+	justify-content: space-between;
+	gap: 35px;
+	margin: 100px 0;
+}
+
+.box {
+	border-top: 1px solid rgb(184, 184, 184);
+	transition: 0.3s;
+}
+
+.box:hover {
+	border-radius: 20px;
+}
+
+.box_icon {
+	margin: 50px 0 20px 0;
+}
+
+.box_title {
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.box_sub {
+	color: darkgray;
+}
+
+.parallax-section {
+	height: 80vh;
+	width: 100%;
+	border-radius: 25px;
+	background-image: url("resources/red_mountains.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.big_picture {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	padding: 100px 0;
+	gap: 50px;
+}
+
+.big_photo {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.main_big_text {
+	font-size: 3.5rem;
+	margin: 35px 0;
+}
+
+.sub_main_big {
+	color: darkgray;
+	margin-bottom: 25px;
+}
+
+.big_photo {
+	border-radius: 25px;
+}
+
+.text_list {
+	border-top: 1px solid darkgrey;
+	padding: 20px 0;
+
+	display: flex;
+	align-items: flex-start;
+}
+
+.number {
+	font-size: 1.3rem;
+	color: darkgray;
+	font-weight: 600;
+	padding-right: 20px;
+}
+
+.discover {
+	background-color: #dfecc6;
+	margin-top: 20px;
+}
+
+.why {
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.spec {
+	color: #485c11;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.why_main {
+	font-size: 4rem;
+	margin: 30px 0;
+	text-align: center;
+}
+
+.why_sub {
+	color: darkgray;
+	margin-bottom: 30px;
+	max-width: 60%;
+	text-align: center;
+}
+
+.comparison {
+	margin: 50px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.comparison_order {
+	display: grid;
+	grid-template-rows: 1fr;
+}
+
+.title {
+	font-family: "Rethink Sans", sans-serif;
+	border-bottom: 2px solid rgb(222, 222, 222);
+	text-align: center;
+	padding: 25px 0;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: rgb(135, 135, 135);
+}
+
+.comparison_list {
+	border-bottom: 1px solid rgb(228, 228, 228);
+	font-family: "Rethink Sans", sans-serif;
+	font-size: 0.8rem;
+	padding: 20px;
+}
+
+.wayne {
+	border: 1px 1px 1px 0 solid white;
+	border-radius: 0 20px 20px 0;
+	transition: 0.5s ease-in-out;
+}
+
+.active {
+	border: 1px 1px 1px 0 solid rgb(226, 226, 226);
+	box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.25);
+}
+
+.wayne:hover {
+	border: 1px 1px 1px 0 solid rgb(226, 226, 226);
+	box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.25);
+}
+
+.testimonial {
+	margin: 200px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.main_test {
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+.test_img {
+	object-fit: contain;
+	width: 100%;
+}
+
+.author {
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+
+.position {
+	color: #8a9b6f;
+}
+
+.success {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid rgb(213, 213, 213);
+	border-bottom: 1px solid rgb(213, 213, 213);
+	padding: 50px 0;
+	margin-bottom: 100px;
+}
+
+.main_success {
+	font-size: 3rem;
+}
+
+.success_btn {
+	margin: 0;
+}
+
+.process {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
+	margin-bottom: 100px;
+}
+
+.num-process {
+	font-size: 3rem;
+	margin: 40px 0;
+	color: #a1a1a1;
+}
+
+.sub_process {
+	color: darkgray;
+	margin-top: 10px;
+	font-weight: 200;
+}
+
+.each {
+	border-top: 1px solid rgb(224, 224, 224);
+	border-radius: 25px;
 }
