@@ -39,6 +39,11 @@ hr {
 	padding: 1rem 2rem;
 	border-radius: 30px;
 	font-weight: 600;
+	transition: .3s;
+}
+
+.btn:hover{
+	color: #242424;
 }
 
 nav {
@@ -371,4 +376,15 @@ nav {
 .each {
 	border-top: 1px solid rgb(224, 224, 224);
 	border-radius: 25px;
+}
+
+.parallax-section-green {
+	height: 80vh;
+	width: 100%;
+	border-radius: 25px;
+	background-image: url("resources/green_mountains.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
