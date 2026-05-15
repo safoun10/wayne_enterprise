@@ -22,7 +22,7 @@ a {
 	cursor: pointer;
 }
 
-hr{
+hr {
 	height: 1px;
 	border: none;
 	background-color: darkgray;
@@ -144,31 +144,89 @@ nav {
 	font-size: 3rem;
 }
 
-.boxes{
+.boxes {
 	display: flex;
 	justify-content: space-between;
 	gap: 35px;
 	margin: 100px 0;
 }
 
-.box{
+.box {
 	border-top: 1px solid rgb(184, 184, 184);
-	transition: .3s;
+	transition: 0.3s;
 }
 
-.box:hover{
+.box:hover {
 	border-radius: 20px;
 }
 
-.box_icon{
+.box_icon {
 	margin: 50px 0 20px 0;
 }
 
-.box_title{
+.box_title {
 	font-size: 1.2rem;
 	margin-bottom: 20px;
 }
 
-.box_sub{
+.box_sub {
 	color: darkgray;
+}
+
+.parallax-section {
+	height: 80vh;
+	width: 100%;
+	border-radius: 25px;
+	background-image: url("resources/red_mountains.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.big_picture {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+	padding: 100px 0;
+	gap: 50px;
+}
+
+.big_photo {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+.main_big_text {
+	font-size: 3.5rem;
+	margin: 35px 0;
+}
+
+.sub_main_big {
+	color: darkgray;
+	margin-bottom: 25px;
+}
+
+.big_photo {
+	border-radius: 25px;
+}
+
+.text_list {
+	border-top: 1px solid darkgrey;
+	padding: 20px 0;
+
+	display: flex;
+	align-items: flex-start;
+}
+
+.number {
+	font-size: 1.3rem;
+	color: darkgray;
+	font-weight: 600;
+	padding-right: 20px;
+}
+
+.discover {
+	background-color: #dfecc6;
+	margin-top: 20px;
 }
