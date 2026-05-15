@@ -7,6 +7,10 @@
 	font-family: "DM Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -37,6 +41,11 @@ nav {
 	align-items: center;
 	padding: 30px 0;
 	font-weight: 600;
+
+	position: sticky;
+	top: 0;
+	background-color: white;
+	z-index: 100;
 }
 
 .links {
@@ -88,4 +97,24 @@ nav {
 	position: absolute;
 	bottom: 0;
 	z-index: -1;
+}
+
+.trusted_logos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 100%;
+	margin: 150px 0;
+}
+
+.logo_trust {
+	max-width: 10vw;
+	padding: 0 15px;
+	object-fit: contain;
+	filter: grayscale(100%);
+	transition: filter 0.3s;
+}
+
+.logo_trust:hover {
+	filter: grayscale(0%);
 }
