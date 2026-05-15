@@ -302,3 +302,31 @@ nav {
 	border: 1px 1px 1px 0 solid rgb(226, 226, 226);
 	box-shadow: 10px 10px 23px -6px rgba(0, 0, 0, 0.25);
 }
+
+.testimonial {
+	margin: 200px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.main_test{
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+.test_img{
+	object-fit: contain;
+	width: 100%;
+}
+
+.author{
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+
+.position{
+	color: #8a9b6f;
+}
