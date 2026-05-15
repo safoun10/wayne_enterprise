@@ -230,3 +230,31 @@ nav {
 	background-color: #dfecc6;
 	margin-top: 20px;
 }
+
+.why {
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.spec {
+	color: #485c11;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.why_main {
+	font-size: 4rem;
+	margin: 30px 0;
+	text-align: center;
+}
+
+.why_sub {
+	color: darkgray;
+	margin-bottom: 30px;
+	max-width: 60%;
+	text-align: center;
+}
