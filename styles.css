@@ -8,7 +8,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +20,12 @@ body {
 a {
 	all: unset;
 	cursor: pointer;
+}
+
+hr{
+	height: 1px;
+	border: none;
+	background-color: darkgray;
 }
 
 .cr_text {
@@ -117,4 +123,52 @@ nav {
 
 .logo_trust:hover {
 	filter: grayscale(0%);
+}
+
+.code {
+	margin: 100px 0;
+}
+
+.semi_top {
+	margin-top: 100px;
+	color: darkgray;
+}
+
+.semi_bottom {
+	margin-bottom: 100px;
+	color: darkgray;
+}
+
+.main_code {
+	margin: 50px 0;
+	font-size: 3rem;
+}
+
+.boxes{
+	display: flex;
+	justify-content: space-between;
+	gap: 35px;
+	margin: 100px 0;
+}
+
+.box{
+	border-top: 1px solid rgb(184, 184, 184);
+	transition: .3s;
+}
+
+.box:hover{
+	border-radius: 20px;
+}
+
+.box_icon{
+	margin: 50px 0 20px 0;
+}
+
+.box_title{
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.box_sub{
+	color: darkgray;
 }
