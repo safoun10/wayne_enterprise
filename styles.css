@@ -43,10 +43,6 @@ hr {
 	cursor: pointer;
 }
 
-/* .btn:hover {
-	color: #242424;
-} */
-
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -75,7 +71,7 @@ nav {
 	position: relative;
 	bottom: 0;
 	left: 0;
-	width: 100%;
+	max-width: 100%;
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
@@ -113,15 +109,17 @@ nav {
 
 .trusted_logos {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
 	align-items: center;
+	gap: 20px;
 	max-width: 100%;
 	margin: 150px 0;
 }
 
 .logo_trust {
-	max-width: 10vw;
-	padding: 0 15px;
+	max-width: 180px;
+	padding: 0 10px;
 	object-fit: contain;
 	filter: grayscale(100%);
 	transition: filter 0.3s;
@@ -192,7 +190,8 @@ nav {
 
 .big_picture {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
 	padding: 100px 0;
 	gap: 50px;
@@ -226,7 +225,7 @@ nav {
 }
 
 .number {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	color: darkgray;
 	font-weight: 600;
 	padding-right: 20px;
@@ -235,6 +234,11 @@ nav {
 .discover {
 	background-color: #dfecc6;
 	margin-top: 20px;
+	transition: 0.3s;
+}
+
+.discover:hover {
+	color: #323232;
 }
 
 .why {
@@ -247,7 +251,7 @@ nav {
 
 .spec {
 	color: #485c11;
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 	font-weight: 600;
 	text-align: center;
 }
@@ -289,7 +293,7 @@ nav {
 .comparison_list {
 	border-bottom: 1px solid rgb(228, 228, 228);
 	font-family: "Rethink Sans", sans-serif;
-	font-size: 0.8rem;
+	font-size: 0.75rem;
 	padding: 20px;
 }
 
@@ -312,7 +316,7 @@ nav {
 .testimonial {
 	margin: 200px 0;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	justify-content: center;
 	align-items: center;
 	gap: 50px;
@@ -424,5 +428,45 @@ nav {
 .footer_text {
 	margin: 50px 0;
 	text-align: center;
-	font-weight: 200 !important;
+	font-weight: 200;
+}
+
+.phone {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.links {
+		display: none;
+	}
+	.boxes {
+		flex-wrap: wrap;
+	}
+	.comparison {
+		overflow-x: scroll;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 70%;
+	}
+	.hero_text {
+		font-size: 6rem;
+		line-height: 6rem;
+	}
+	.laptop {
+		display: none;
+	}
+	.hero_img {
+		border: 1px solid transparent;
+		border-radius: 30px;
+		transform: translateY(20px);
+	}
+	.phone {
+		display: inherit;
+	}
+	.bg {
+		min-height: 35vh;
+	}
 }
