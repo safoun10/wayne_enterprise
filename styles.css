@@ -40,11 +40,12 @@ hr {
 	border-radius: 30px;
 	font-weight: 600;
 	transition: 0.3s;
+	cursor: pointer;
 }
 
-.btn:hover {
+/* .btn:hover {
 	color: #242424;
-}
+} */
 
 nav {
 	display: flex;
@@ -412,7 +413,7 @@ nav {
 }
 
 .learn {
-	width: 50%;
+	min-width: 35vw;
 	text-align: center;
 }
 
