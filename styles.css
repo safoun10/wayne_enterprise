@@ -109,16 +109,17 @@ nav {
 
 .trusted_logos {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
+	gap: 20px;
 	max-width: 100%;
 	margin: 150px 0;
 }
 
 .logo_trust {
-	max-width: 10vw;
-	padding: 0 15px;
+	max-width: 180px;
+	padding: 0 10px;
 	object-fit: contain;
 	filter: grayscale(100%);
 	transition: filter 0.3s;
@@ -430,6 +431,10 @@ nav {
 	font-weight: 200;
 }
 
+.phone {
+	display: none;
+}
+
 @media screen and (max-width: 800px) {
 	.links {
 		display: none;
@@ -449,5 +454,19 @@ nav {
 	.hero_text {
 		font-size: 6rem;
 		line-height: 6rem;
+	}
+	.laptop {
+		display: none;
+	}
+	.hero_img {
+		border: 1px solid transparent;
+		border-radius: 30px;
+		transform: translateY(20px);
+	}
+	.phone {
+		display: inherit;
+	}
+	.bg {
+		min-height: 35vh;
 	}
 }
